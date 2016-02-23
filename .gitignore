@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+dist
+lib
+coverage
+*.log
+.idea
+*.ipr
+*.iml
+*.iws
+modernizr.js

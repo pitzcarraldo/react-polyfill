@@ -1,0 +1,20 @@
+{
+  "name": "react-polyfill",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Minkyu Cho <mrnoname@naver.com>",
+  "private": false,
+  "main": [
+    "dist/react-polyfill.js",
+    "dist/react-polyfill.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "moduleType": [
+    "globals"
+  ]
+}
