@@ -24,7 +24,7 @@ This contains below modules.
 <head>
 ...
 <!--[if lte IE 8]>
-<script src="https://npmcdn.com/react-polyfill@latest/dist/react-polyfill.min.js" charSet="UTF-8"></script>
+<script src="//pitzcarraldo.github.io/react-polyfill/react-polyfill.min.js" charSet="UTF-8"></script>
 <![endif]-->
 <link href="styles.css" rel="stylesheet" charSet="UTF-8"/>
 ...

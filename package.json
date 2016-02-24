@@ -35,7 +35,8 @@
     "preversion": "npm run clean",
     "version": "npm run build",
     "postversion": "git push && git push --tags && npm run clean",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run clean && npm run build",
+    "dist:publish": "npm run clean && npm run build && cd dist && git init && git commit --allow-empty -m 'update dist' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update dist' && git push https://github.com/Pitzcarraldo/react-polyfill.git gh-pages --force"
   },
   "devDependencies": {
     "compose-dataset-shim": "^1.0.0",
