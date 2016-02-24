@@ -1,8 +1,8 @@
 # react-polyfill
 
 [![Build Status](https://travis-ci.org/Pitzcarraldo/react-polyfill.svg)](https://travis-ci.org/Pitzcarraldo/react-polyfill)
-[![npm version](https://img.shields.io/npm/v/reduxible.svg?style=flat-square)](https://www.npmjs.com/package/react-polyfill)
-[![npm downloads](https://img.shields.io/npm/dm/reduxible.svg?style=flat-square)](https://www.npmjs.com/package/react-polyfill)
+[![npm version](https://img.shields.io/npm/v/react-polyfill.svg?style=flat-square)](https://www.npmjs.com/package/react-polyfill)
+[![npm downloads](https://img.shields.io/npm/dm/react-polyfill.svg?style=flat-square)](https://www.npmjs.com/package/react-polyfill)
 
 A bundle of shims and polyfills to support React and CSS3 for legacy browsers.
 This contains below modules.
