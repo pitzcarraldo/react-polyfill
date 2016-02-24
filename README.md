@@ -1,9 +1,48 @@
 # react-polyfill
 
-A builde of shims and polyfills to support React and CSS3 for legacy browsers.
-
 [![Build Status](https://travis-ci.org/Pitzcarraldo/react-polyfill.svg)](https://travis-ci.org/Pitzcarraldo/react-polyfill)
-[![Coverage Status](https://coveralls.io/repos/github/Pitzcarraldo/react-polyfill/badge.svg?branch=master)](https://coveralls.io/github/Pitzcarraldo/react-polyfill?branch=master)
 [![npm version](https://img.shields.io/npm/v/reduxible.svg?style=flat-square)](https://www.npmjs.com/package/reduxible)
 [![npm downloads](https://img.shields.io/npm/dm/reduxible.svg?style=flat-square)](https://www.npmjs.com/package/reduxible)
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Pitzcarraldo/react-polyfill)
+
+A bundle of shims and polyfills to support React and CSS3 for legacy browsers.
+This contains below modules.
+
+* [compose-dataset-shim](https://github.com/compose-ui/dataset-shim): Shims the dataset property for DOM nodes.
+* [console-polyfill](https://github.com/paulmillr/console-polyfill): Makes it safe to do console.log()-s etc always.
+* [es5-shim](https://github.com/es-shims/es5-shim): ECMAScript 5 compatibility shims for legacy (and modern) JavaScript engines.
+* [eventsource-polyfill](https://github.com/amvtek/EventSource): Provide polyfill to support EventSource in browser where it is not available
+* [modernizr](https://github.com/Modernizr/Modernizr): JavaScript library that detects HTML5 and CSS3 features in the user’s browser. Built with config-all.json
+* [respond.js](https://github.com/scottjehl/Respond): A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)
+
+## Usage
+
+### Browser
+
+:warning: React-Polyfill must be placed before any stylesheets.
+
+```html
+<head>
+...
+<!--[if lte IE 8]>
+<script src="${assets.javascript.polyfills}" charSet="UTF-8"></script>
+<![endif]-->
+<link href="styles.css" rel="stylesheet" charSet="UTF-8"/>
+...
+</head>
+```
+
+### Webpack
+
+React-Polyfill is just concatted JavaScript. Thus, you couldn't require or import to your module with `babel-loader`. Use `style-loader` instead.
+
+```js
+require('style!react-polyfill');
+
+or
+
+import 'style!react-polyfill';
+```
+
+## LICENSE
+
+[MIT](LICENSE)
