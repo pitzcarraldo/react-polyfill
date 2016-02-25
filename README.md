@@ -33,14 +33,14 @@ This contains below modules.
 
 ### Webpack
 
-React-Polyfill is just concatted JavaScript. Thus, you couldn't require or import to your module with `babel-loader`. Use `style-loader` instead.
+React-Polyfill is just concatted JavaScript. Thus, you couldn't require or import to your module with `babel-loader`. Use [`script-loader`](https://github.com/webpack/script-loader) instead.
 
 ```js
-require('style!react-polyfill');
+require('script!react-polyfill');
 
 or
 
-import 'style!react-polyfill';
+import 'script!react-polyfill';
 ```
 
 ## LICENSE
