@@ -1,7 +1,7 @@
 {
   "name": "react-polyfill",
   "description": "A bundle of shims and polyfills to support React and HTML5/CSS3 for legacy browsers.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Minkyu Cho <mrnoname@naver.com>",
   "license": "MIT",
   "homepage": "https://github.com/Pitzcarraldo/react-polyfill",
